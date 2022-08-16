@@ -27,5 +27,5 @@ module.exports = (request, response) => {
               .then((token) => response.send({token: token}));
         });
       })
-      .catch((error) => response.status(422).send({errorCu: error}));
+      .catch((error) => response.status(422).send({error: error}));
 };
